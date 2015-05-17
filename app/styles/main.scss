@@ -1,0 +1,48 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$grid-gutter-width: 30px !default;
+$grid-columns: 48 !default;
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.header {
+  h1.title {
+    a {
+      text-decoration: none;
+      color: #333333;
+    }
+    text-align: center;
+  }
+}
+
+.gallery {
+    position: relative;
+    .gallery-item {
+        @include make-xs-column(16, 0px);
+
+        @include make-sm-column(12, 0px);
+
+        @include make-md-column(8, 0px);
+
+        @include make-lg-column(6, 0px);
+
+        &.hover {
+          z-index: 1;
+          transform-origin: 0% 0%;
+
+          transform: scaleX(4) scaleY(4) translate3d(0,0,0);
+        }
+    }
+    .viewport {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #FFF;
+        z-index: 10;
+        @include opacity(0);
+        img {
+          width: 100%;
+          height: 100%;
+        }
+    }
+}

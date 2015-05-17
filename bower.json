@@ -1,0 +1,9 @@
+{
+  "name": "johnwehl",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.4",
+    "modernizr": "~2.8.2",
+    "velocity": "~1.2.2"
+  }
+}
